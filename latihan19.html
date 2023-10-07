@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biodata Penduduk</title>
+        <style>
+            body {
+                background-color: #F7FFE5;
+            }
+            table {
+                background-color: #CEE6F3;
+                box-shadow: 6px 6px 5px 10px #b7b5b566;
+                border-radius: 10px;
+                margin: auto;
+                margin-top: 12%;    
+            }
+            .submit {
+                box-shadow: 1px 1px 1px 2px #6666 ;
+            }
+            .reset {
+                box-shadow: 1px 1px 1px 2px #6666 ;
+            }
+            #NIS, #Nama {
+                box-shadow: 1px 1px 1px 3px #6666 ;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table width="80%">
+                <tr>
+                    <td><hr></td>
+                    <td align="center">BIODATA PENDUDUK</td>
+                    <td><hr></td>
+                </tr>
+    
+                <tr>
+                    <td width="25%">NIK</td>
+                    <td witdh="10%" align="center">:</td>
+                    <td><input  type="number" id="NIS" name="NIS"></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td align="center">:</td>
+                    <td><input  type="text" id="Nama" name="Nama"></td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td align="center">:</td>
+                    <td><input type="checkbox" id="Islam" name="Agama" value="Islam">
+                        <label for="Islam">Islam</label><br>
+                        <input type="radio" id="Kristen" name="Agama" value="Kristen">
+                        <label for="Kristen">Kristen</label><br>
+                        <input type="radio" id="Hindu" name="Agama" value="Hindu">
+                        <label for="Hindu">Hindu</label><br>
+                        <input type="radio" id="Budha" name="Agama" value="Budha">
+                        <label for="Budha">Budha</label><br>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td align="center">:</td>
+                    <td><input type="radio" id="Voli" name="Hobby" value="Voli">
+                        <label for="Voli">Voli</label><br>
+                        <input type="radio" id="Renang" name="Hobby" value="Renang">
+                        <label for="Renang">Renang</label><br>
+                        <input type="radio" id="dll" name="Hobby" value="dll">
+                        <label for="dll">dll</label><br>
+                </td>
+                <tr>
+                    <td>Alamat</td>
+                    <td align="center">:</td>
+                    <td><textarea name="Alamat" id="Alamat" cols="30" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right"><input type="submit" value="SUBMIT" class="submit"></td>
+                    <td align="center"></td>
+                    <td><input type="reset" value="RESET" class="reset"></td>
+                </tr>
+    
+            </table>
+        </form>
+    </body>
+</html>
